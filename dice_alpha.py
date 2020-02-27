@@ -1,35 +1,15 @@
 import random
 import time
+from flask import Flask
+from dice import dice
 
+app = Flask(__name__)
 
-def dice():
+@app.route("/")
+@app.route("/my_route")
+def my_route():
+    return dice()
     
-    player = random.randint(1,6)
-    print("You rolled " + str(player) )
 
-    ai = random.randint(1,6)
-    print("The computer rolls....")
-    time.sleep(2)
-    print("The computer rolled " + str(ai) )
-
-
-    if player > ai :
-       print("You win")
-
-    elif player == ai:
-        print("Tie game")
-
-    else:
-        print("You lose")
-
-
-while True:
-        print("Press return to roll your die")
-
-        roll = input()
-
-
-        dice() 
-
-
-
+if __name__ == '__main__':
+    app.run(debug=True)
