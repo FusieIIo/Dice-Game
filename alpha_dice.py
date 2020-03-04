@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/my_route")
 def my_route():
-    return render_template('dice.html'), dice()
+    return render_template('dice.html', result = dice())
 
 
 if __name__ == '__main__':
