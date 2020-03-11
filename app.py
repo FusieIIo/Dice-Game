@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from dice import dice
+from dice import roll_die
 
 app = Flask(__name__)
 
