@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RESULT</title>
+    <title>Dice Game</title>
 </head>
 <body>
-    <h3>Dice Game</h3>
-    <h4>'Refresh' to roll the die</h4>
-    <p>You have rolled ... {{ result }}</p><br>
-    <p>The computer rolled ... {{ result }}</p><br><br>
-    <p>RESULT: {{  }}</p>
+    <h1>Dice Game</h1>
+    <h3>'Refresh' to roll the die</h3>
+    <p>You have rolled ... {{ result }}</p>
+    <p>Computer rolled ... {{ result2 }}</p>
+    {% if result > result2 %}
+        <h3>RESULT ... You WIN!</h3>
+    {% else %}
+        <p>RESULT ... You lose</p>
+    {% endif %}
 </body>
 </html>
