@@ -9,7 +9,8 @@ from dice import roll_die
 app = Flask(__name__)
 
 
-@app.route('/dice_game')
+@app.route('/dice-game')
+
 def dice_game():
 
     return render_template(
