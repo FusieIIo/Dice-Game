@@ -16,6 +16,10 @@ app = Flask(__name__)
 def dice_game():
 
     return render_template(
+        'dice.html',
+        result1=request.args.get('result1', type=int) or roll_die(),
+        result2=roll_die()
+    )
 
         'dice.html',
 
