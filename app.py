@@ -1,4 +1,6 @@
-from flask import Flask
+from flask import Flask, render_template, request
+
+from dice import roll_die
 
 from flask import render_template
 
