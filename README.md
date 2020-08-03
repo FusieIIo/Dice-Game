@@ -1,4 +1,4 @@
-# Dice_Game
+# Dice Game
 
 Upon opening the webpage, simply press refresh to roll the dice.
 
