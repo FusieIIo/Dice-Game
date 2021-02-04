@@ -1,5 +1,7 @@
 # Dice Game
 
+A simple Python Flask web application/game.
+
 Upon opening the webpage, simply press refresh to roll the dice.
 
 You will see what you have rolled, then below what the computer rolled and a result will display below this.
